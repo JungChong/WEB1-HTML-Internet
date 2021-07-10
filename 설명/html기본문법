@@ -1,0 +1,70 @@
+1.태그(tage)
+<!doctype html> HTML로서 만들어졌다는걸 표현하기 위해 문서의 시작에 추가
+
+<a href="" target="" title="">내용</a> (a는anchor의href는HyperTextReference의약자)
+target="_blank" (링크를 클릭했을 때 새창에서 페이지가 열리게 하는 속성)
+title (이 링크가 어떤 내용을 담고 있는지를 툴팁으로 보여주는 기능)
+
+<html></html> <head>와<body>를 감싸기로 약속 
+
+<head></head> 본문을 설명
+
+<title>제목</title> 제목을 지정
+
+<meta charset="**"> 브라우저에게 **로 만들어졌으니 **로 열어야 한다고 알려줌
+
+<body></body> 본문
+
+<strong></strong> 강조
+
+<u></u> 밑줄
+
+<br><br> 줄바꿈
+
+<p></p> 단락으로서 자동으로 줄바꿈 (<p style="margin-top:45px;">)
+(단락과 단락의 간격이 고정되어 있기 떄문에 시각적으로 자유도가 떨어지지만 CSS로 극복가능)
+
+<h></h> 제목
+
+<ul>(unordered list), <ol>(ordered list) 다른 목록과 구분할 수 있도록 하는 경계
+    <li></li> 목차 태그(list)
+</ul>, </ol>
+
+
+2.속성(attribute)
+<img>태그 이름만으로는 정보가 부족하기 때문에 속성을 적용한다
+img태그에 source의 줄임말인 src를 붙임
+내 컴퓨터에 이미지가 없어도, 인터넷에 있는 이미지를 표시할 수 있다.
+<img scr = "https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png">
+내 컴퓨터에 있는 이미지
+<img src="girl-3954232.jpg">
+이미지 크기 조정
+<img src="girl-3954232.jpg" width = "30%">
+
+
+3.부모,자식(parent, child)
+<p>
+    <a href="https:naver.com">네이버</a>
+</p>
+p태그가 a태그의 부모, a태그가 p태그의 자식이지만
+어느쪽이던 반드시 그래야만 하는 것은 아니다
+직장의 상하관계처럼 필요에 따라서 관계가 달라질 수 있다.
+단, 몇몇 태그들은 부모 자식 관계처럼 고정된 관계인 태그들이 있다.
+(1) <ul><list></list></ul> 서로는 서로를 꼭 필요로한다.
+    <ol><list></list></ul>
+
+
+4.문장구조와 슈퍼스타들
+<title></title> 제목을 지정하기 위한 태그
+(검색엔진이 웹페이지를 분석할 때 가장 중요하게 생각하는 태그이기 때문에 안쓰면 큰 손해)
+<meta charset="**"> 웹 브라우저야 이 웹페이지는 **으로 만들어졌기 떔누에 **으로 열어야해
+본문은 <body>태그로 본문을 설명하는 태그는 <head>로 감쌈
+또, <body>태그와 <head>태그를 <html>태그로 감싸기로 약속함
+<!doctype html> HTML로서 만들어졌다는 것을 표현하기 위해서 문서의 시작에 추가
+
+
+5.HTML태그의 제왕
+HTML의 약자인 HyperText Markup Language의 HyperText가 바로 이 태그를 의미
+anchor의 첫글자 a이다(앵커는 배가 정박할 때 사용하는 닻을 의미)
+즉, 링크!!
+<a href="" target="" title="">내용</a>

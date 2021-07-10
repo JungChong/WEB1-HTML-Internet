@@ -1,0 +1,37 @@
+아파치(오픈소스, 무료) 사용
+
+웹서버를 설치한 후레 Go to Application버튼을 눌렀을 때 나오는 주소는
+localhost이지만 http://localhost/index.html에서 앞뒤가 생략된 것 뿐이다
+한편, localhost라는 도메인 이름은 '내 컴퓨터'라는 의미의 특수한 주소이다
+http://127.0.0.1/index.html 똑같은 의미이지만 형식이 다른 주소
+
+아래의 두 주소들은 모두 내 컴퓨터에 있는 index.html파일을 요청하는 주소이다.
+http://localhost/index.html,http://127.0.0.1/index.html
+
+localhost와 같이 의미가 있는 이름을 도메인 네임(domain name), 127.0.0.1과 같이 번호로
+되어 있는 것을 ip주소(internet Protocol Address)라고 부른다
+
+index.html의 위치 -> apache → htdocs(hypertext documents) → index.html
+
+1. http://127.0.0.1/index.html을 웹브라우저에 입력하면 웹브라우저는
+    같은 컴퓨터에 설치된 웹서버에게 index.html을 요청
+
+2. 웹서버는 웹페이지를 저장하기로 약속된 디렉토리인 htdocs에서 
+    index.html 파일의 코드를 읽어서 웹브라우저에게 전송
+    웹서버는 코드를 해석해서 화면에 웹페이지를 표시
+
+3. 자신의 프로젝트를 웹서버를 통해서 화면서 표시
+-> htdocs 디렉토리의 파일들을 모두 삭제하고, 프로젝트 폴더에 있는 파일을 복사
+
+아이피 주소를 이용해서 웹페이지를 여는것
+    index.html -> Web Server -> Web Browser
+파일 열기를 통해서 웹페이지를 여는 것
+    index.html -> Web Browser
+
+웹브라우저가 웹서버에 접속하기 위해서는 웹서버가 설치된 컴퓨터의 주소(ip 주소)를 알아야함
+127.0.0.1, 192.168.32.136은 둘다 내 컴퓨터를 가르킨다
+전자는 자기 자신을 의미하는 일종의 대명사
+후자는 저 주소에 해당하는 컴퓨터를 가리키는 고유 명사
+
+웹브라우저가 설치된 컴퓨터와 웹서버가 설치된 컴퓨터를 같은 네트워크에 접속 ->
+서버가 설치된 컴퓨터의 ip 주소로 접속가능
